@@ -1,5 +1,5 @@
 function validate(password) {
-    var patt = new RegExp("(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{6,}");
+    var patt = new RegExp("^(?=.*[a-z]+)(?=.*[A-Z]+)(?=.*[0-9]+)[a-zA-Z0-9]{6,}$");
     return patt.test(password);
 }
 
